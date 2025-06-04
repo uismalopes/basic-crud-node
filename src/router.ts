@@ -4,8 +4,8 @@ import { CommentController } from './controllers';
 const router = Router();
 
 router.get('/comments', CommentController.getAll);
-router.get('/comments/:id', CommentController.get);
 router.post('/comments', CommentController.post);
+router.get('/comments/:id', CommentController.get);
 router.patch('/comments/:id', CommentController.patch);
 router.delete('/comments/:id', CommentController.delete);
 
